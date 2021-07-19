@@ -29,5 +29,7 @@ class RoboFile extends \PublishPressBuilder\PackageBuilderTasks
 
         $this->setVersionConstantName('PUBLISHPRESS_VERSION');
         $this->setVersionConstantFiles(['includes.php']);
+        $this->appendToFileToIgnore(['psalm.xml']);
+        $this->appendToFileToIgnore(['jest.config.ts']);
     }
 }
